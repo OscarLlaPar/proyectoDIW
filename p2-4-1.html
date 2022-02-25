@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            background-color:black;
+            color: white;
+        }
+        div div{
+            margin: 20px;
+            padding: 10px;
+            width: 200px;
+            background-color:grey;
+        }
+        .primero div:first-child{
+            background-color: darkblue;
+        }
+        .primero div:last-child{
+            background-color: rgb(165, 101, 42);
+        }
+        li:nth-child(2){
+            background-color: red;
+        }
+        li:nth-last-child(2){
+            background-color: red;
+        }
+        li:nth-last-child(3){
+            background-color: rgb(90, 33, 33);
+        }
+        div:only-child{
+            background-color:rgb(92, 168, 16);
+        }
+        .cuarto div:first-of-type{
+            background-color: darkcyan;
+        }
+        .cuarto div:last-of-type{
+            background-color: burlywood;
+        }
+        .quinto div:nth-of-type(2){
+            background-color:indigo;
+        }
+        .sexto span:only-of-type{
+            background-color: darksalmon;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pseudo-clases</h1>
+    <p>:first-child y :last-child</p>
+    <div class="primero">
+        
+        <div>
+            Paragraph 1
+        </div>
+        <div>
+            Paragraph 2
+        </div>
+        <div>
+            Paragraph 3
+        </div>
+        <div>
+            Paragraph 4
+        </div>
+    </div>
+    <p>:nth-child() y :nth-last-child()</p>
+    <div class="segundo">
+        
+        <ul>
+            <li>Option 1</li>
+            <li>Option 2</li>
+            <li>Option 3</li>
+            <li>Option 4</li>
+            <li>Option 5</li>
+            <li>Option 6</li>
+        </ul>
+    </div>
+    <p>:only-child</p>
+    <div class="tercero">
+        <div>
+            single-paragraph
+        </div>
+    </div>
+    <p>:first-of-type y :last-of-type</p>
+    <div class="cuarto">
+        <div>
+            Paragraph one
+        </div>
+        <span>text in span</span>
+        <div>
+            Paragraph two2
+        </div>
+        <strong>Text in strong</strong>
+        <div>
+            This is a div
+        </div>
+        <div>
+            Paragraph three
+        </div>
+    </div>
+    <p>:nth-of-type() y :nth-last-child()</p>
+    <div class="quinto">
+        <div>
+            Paragraph one
+        </div>
+        <span>text in span</span>
+        <div>
+            Paragraph two2
+        </div>
+        <strong>Text in strong</strong>
+        <div>
+            This is a div
+        </div>
+        <div>
+            Paragraph three
+        </div>
+    </div>
+    <p>:only-of-type</p>
+    <div class="sexto">
+        <div>
+            Paragraph one
+        </div>
+        <span>text in span</span>
+        <div>
+            Paragraph two2
+        </div>
+        <div>
+            Paragraph three
+        </div>
+    </div>
+</body>
+</html>

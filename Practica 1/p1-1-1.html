@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: sans-serif; 
+            font-weight: bold; 
+            text-align: center;
+        }
+        table{
+            width: 100%;
+        }
+        .claroscuro{
+            margin-top: 25px;
+        }
+        td{
+            padding: 10px;
+        }
+        #fila1 td:nth-child(1){
+            background-color: #FF0000;
+        }
+        #fila1 td:nth-child(2){
+            background-color: #00FF00;
+        }
+        #fila1 td:nth-child(3){
+            background-color: #0000FF;
+        }
+        #fila2 td:nth-child(1){
+            background-color: #FFFF00;
+        }
+        #fila2 td:nth-child(2){
+            background-color: #FF0000;
+        }
+        #fila2 td:nth-child(3){
+            background-color: #FF00FF;
+        }
+        #fila2 td:nth-child(4){
+            background-color: #0000FF;
+        }
+        #fila2 td:nth-child(5){
+            background-color: #00FFFF;
+        }
+        #fila2 td:nth-child(6){
+            background-color: #00FF00;
+        }
+        #fila3 td:nth-child(1){
+            background-color: #FFFF80;
+        }
+        #fila3 td:nth-child(2){
+            background-color: #FF8080;
+        }
+        #fila3 td:nth-child(3){
+            background-color: #FF80FF;
+        }
+        #fila3 td:nth-child(4){
+            background-color: #8080FF;
+        }
+        #fila3 td:nth-child(5){
+            background-color: #80FFFF;
+        }
+        #fila3 td:nth-child(6){
+            background-color: #80FF80;
+        }
+        #fila4 td:nth-child(1){
+            background-color: #FFFFC0;
+        }
+        #fila4 td:nth-child(2){
+            background-color: #FFC0C0;
+        }
+        #fila4 td:nth-child(3){
+            background-color: #FFC0FF;
+        }
+        #fila4 td:nth-child(4){
+            background-color: #C0C0FF;
+        }
+        #fila4 td:nth-child(5){
+            background-color: #C0FFFF;
+        }
+        #fila4 td:nth-child(6){
+            background-color: #C0FFC0;
+        }
+        #fila5 td:nth-child(1){
+            background-color: #C0C000;
+        }
+        #fila5 td:nth-child(2){
+            background-color: #C00000;
+        }
+        #fila5 td:nth-child(3){
+            background-color: #C000C0;
+        }
+        #fila5 td:nth-child(4){
+            background-color: #0000C0;
+        }
+        #fila5 td:nth-child(5){
+            background-color: #00C0C0;
+        }
+        #fila5 td:nth-child(6){
+            background-color: #00C000;
+        }
+        #fila6 td:nth-child(1){
+            background-color: #808000;
+        }
+        #fila6 td:nth-child(2){
+            background-color: #800000;
+        }
+        #fila6 td:nth-child(3){
+            background-color: #800080;
+        }
+        #fila6 td:nth-child(4){
+            background-color: #000080;
+        }
+        #fila6 td:nth-child(5){
+            background-color: #008080;
+        }
+        #fila6 td:nth-child(6){
+            background-color: #008000;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <th colspan="3">Colores Primarios</th>
+        <tr id="fila1">
+            <td>#FF0000</td>
+            <td>#00FF00</td>
+            <td>#0000FF</td>
+        </tr>
+    </table>
+    <table>
+        <th colspan="6">Colores Secundarios</th>
+        <tr id="fila2">
+            <td>#FFFF00</td>
+            <td>#FF0000</td>
+            <td>#FF00FF</td>
+            <td>#0000FF</td>
+            <td>#00FFFF</td>
+            <td>#00FF00</td>
+        </tr>
+    </table>
+    <table class="claroscuro">
+        <th colspan="6">Para hacer los colores mas claros Suma en hexadecimal</th>
+        <tr id="fila3">
+            <td>#FFFF80</td>
+            <td>#FF8080</td>
+            <td>#FF80FF</td>
+            <td>#8080FF</td>
+            <td>#80FFFF</td>
+            <td>#80FF80</td>
+        </tr>
+        <tr id="fila4">
+            <td>#FFFFC0</td>
+            <td>#FFC0C0</td>
+            <td>#FFC0FF</td>
+            <td>#C0C0FF</td>
+            <td>#C0FFFF</td>
+            <td>#C0FFC0</td>
+        </tr>
+    </table>
+    <table class="claroscuro">
+        <th colspan="6">Para hacer los colores mas oscuros Resta en hexadecimal</th>
+        <tr id="fila5">
+            <td>#C0C000</td>
+            <td>#C00000</td>
+            <td>#C000C0</td>
+            <td>#0000C0</td>
+            <td>#00C0C0</td>
+            <td>#00C000</td>
+        </tr>
+        <tr id="fila6">
+            <td>#808000</td>
+            <td>#800000</td>
+            <td>#800080</td>
+            <td>#000080</td>
+            <td>#008080</td>
+            <td>#008000</td>
+        </tr>
+    </table>
+</body>
+</html>

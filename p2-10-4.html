@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        body{
+            padding: 20px;
+        }
+        .grid, .flex{
+            width: 50vw;
+            height: 50vw;
+        }
+        .grid{
+            
+            display:grid;
+            grid-template-columns: 2.5fr 2.5fr 5fr;
+            grid-template-rows: repeat(5,2fr);
+            grid-auto-flow: column;
+        }
+        .flex{
+            display:flex;
+            flex-flow: column wrap;
+        }
+        div div:nth-child(2n){
+            background-color: mediumseagreen;
+        }
+        div div:nth-child(2n-1){
+            background-color:skyblue;
+        }
+        .flex div{
+            flex-basis: 20%;
+            width:25%;
+        }
+        .flex div:nth-child(11), .flex div:nth-child(12){
+            width: 50%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Con grid</h1>
+    <div class="grid">
+        <div class="1">1</div>
+        <div class="2">2</div>
+        <div class="3">3</div>
+        <div class="4">4</div>
+        <div class="5">5</div>
+        <div class="6">6</div>
+        <div class="7">7</div>
+        <div class="8">8</div>
+        <div class="9">9</div>
+        <div class="10">10</div>
+        <div class="11">11</div>
+        <div class="12">12</div>
+    </div>
+    <h1>Con flex</h1>
+    <div class="flex">
+        <div class="1">1</div>
+        <div class="2">2</div>
+        <div class="3">3</div>
+        <div class="4">4</div>
+        <div class="5">5</div>
+        <div class="6">6</div>
+        <div class="7">7</div>
+        <div class="8">8</div>
+        <div class="9">9</div>
+        <div class="10">10</div>
+        <div class="11">11</div>
+        <div class="12">12</div>
+    </div>
+</body>
+</html>

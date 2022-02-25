@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+            font-family: Verdana, sans-serif;
+        }
+        h1{
+            text-align: center;
+            text-transform: uppercase;
+        }
+        header{
+            background: rgb(93, 145, 204);
+            padding: 10px;
+            height:10vh;
+        }
+        main{
+            position: relative;
+            background-color: rgb(44, 94, 85);
+            height: 90vh;
+            padding-top:5px;
+        }
+        .cont{
+            width: 180px;
+            height: 300px;
+            background-color: rgb(204, 200, 195);
+            display: inline-block;
+            position: relative;
+            margin:15px;
+            overflow: hidden;
+        }
+        .producto{
+            
+            display: block;
+            width: 176px;
+            height: 176px;
+            margin: 2px;
+        }
+        .amarillo{
+            position:absolute;
+            width:112px;
+            height:32px;
+            bottom:36%;
+        }
+        .precio{
+            position:absolute;
+            bottom: 38%;
+            left: 20px;
+            font-weight:bold;
+        }
+        .desc{
+            font-weight:bold;
+            color: #1EB700;
+            font-size: 12px;
+            text-transform: uppercase;
+            margin: 20px 5px 0 5px;
+        }
+        .icon{
+            width: 25px;
+            display:inline;
+            margin-top: 20px;
+            margin-left:5px;
+            
+        }
+        div .icon:last-child{
+            position: absolute;
+            right:5px;
+            
+        }
+        .menu{
+            /*display:none;*/
+            position: absolute;
+            bottom: 45%;
+            left: -100%; 
+            transition: all 0.2s ease-in;
+            
+            padding:0;
+            
+            
+        }
+        .opcion{
+            display:inline;
+            width: 30px;
+            
+        }
+        .cont:hover > .menu{
+            /* display:block; */
+            left: -0%;
+            left:4px; 
+            
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Listado de articulos<br> Prueba 2-8-4</h1>
+    </header>
+    <main>
+        <div class="cont">
+            <img src="img/reloj.jpg" class="producto">
+            <div class=menu>
+                <img src="img/vista-previa-gris.png" class="opcion">
+                <img src="img/listadeseo.png" class="opcion">
+                <img src="img/comparador.png" class="opcion">
+                <img src="img/configurador.png" class="opcion">
+                <img src="img/carro.png" class="opcion">
+            </div>
+            <img src="img/boton_amarillo.png" class="amarillo">
+            <p class="precio">65,90€</p>
+            <p class="desc">Reloj de cuarzo con correa de silicona informal...</p>
+            <img src="img/novedad.png" class="icon" >
+            <img src="img/topventas.png" class="icon">
+            <img src="img/stock-3.png" class="icon">
+        </div>
+        <div class="cont">
+            <img src="img/apple-watch-6.jfif" class="producto">
+            <div class=menu>
+                <img src="img/vista-previa.png" class="opcion">
+                <img src="img/listadeseo.png" class="opcion">
+                <img src="img/comparador.png" class="opcion">
+                <img src="img/configurador.png" class="opcion">
+                <img src="img/carro.png" class="opcion">
+            </div>
+            <img src="img/boton_amarillo.png" class="amarillo">
+            <p class="precio">399,00€</p>
+            <p class="desc">Apple Watch-6 caja 44mm aluminio y correa azul</p>
+            <img src="img/novedad.png" class="icon">
+            <img src="img/stock-1.png" class="icon">
+        </div>
+        <div class="cont">
+            <img src="img/samsungGalaxyWatchActive2.png" class="producto">
+            <div class=menu>
+                <img src="img/vista-previa.png" class="opcion">
+                <img src="img/listadeseo.png" class="opcion">
+                <img src="img/comparador.png" class="opcion">
+                <img src="img/configurador.png" class="opcion">
+                <img src="img/carro-gris.png" class="opcion">
+            </div>
+            <img src="img/boton_amarillo.png" class="amarillo">
+            <p class="precio">279,00€</p>
+            <p class="desc">Samsung Galaxy Watch Active2 40mm BT</p>
+            <img src="img/novedad.png" class="icon">
+            <img src="img/topventas.png" class="icon">
+            <img src="img/stock-3.png" class="icon">
+        </div>
+    </main>
+</body>
+</html>

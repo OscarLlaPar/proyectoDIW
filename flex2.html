@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            background-color: rgb(202, 43, 131);
+            display:flex;
+            width:600px;
+            margin: 1rem auto;
+            padding: 10px;
+            flex-flow: row;
+            justify-content:space-evenly;
+            gap: 10px;
+        }
+        .container div{
+            height: 100px;
+            width: 100px;
+            background-color: rgb(100, 221, 237);
+            font-weight: bold;
+            text-align: space-around;
+            font-size:32px;
+            
+        }
+        .container div:nth-child(2){
+            line-height:100px;
+        }
+        .container div:nth-child(3){
+            line-height:150px;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>BOX 1</div>
+        <div>BOX 2</div>
+        <div>BOX 3</div>
+    </div>
+</body>
+</html>

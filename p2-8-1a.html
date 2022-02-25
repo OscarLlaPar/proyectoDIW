@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        ul{
+            list-style: none;
+            position:relative;
+        }
+        li{
+            display: inline-block;
+            margin: 0 0 0 5rem;
+            width:128px;
+            height:32px;
+            text-align:center;
+            padding-top:15px;
+            border-radius: 10px 10px 0 0;
+        }
+        li:first-child{
+            background-color: rgb(84, 235, 97);
+        }
+        li:nth-child(2){
+            background-color: rgb(81, 117, 216);
+        }
+        li:last-child{
+            background-color: rgb(230, 154, 223);
+        }
+        a{
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+        a:hover{
+            color:white;
+        }
+        p{
+            padding: 1rem;
+        }
+        div{
+            margin: 10px 1rem;
+            margin-top:0;
+            margin-bottom:0;
+            width: 800px;
+            height: 582px;
+            position:absolute;
+        }
+        div:first-of-type{
+            background-color: rgb(84, 235, 97);
+            z-index:10;
+        }
+        div:nth-of-type(2){
+            background-color: rgb(81, 117, 216);
+        }
+        div:last-of-type{
+            background-color: rgb(230, 154, 223);
+        }
+        div:target{
+            z-index: 100;
+        }
+
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="#a1">Primera</a></li>
+        <li><a href="#a2">Segunda</a></li>
+        <li><a href="#a3">Tercera</a></li>
+    </ul>
+    <div id="a1">
+        <p>Este es el contenido de la 1 PESTAÑA</p>
+    </div>
+    <div id="a2">
+        <p>Este es el contenido de la 2 PESTAÑA</p>
+    </div>
+    <div id="a3">
+        <p>Este es el contenido de la 3 PESTAÑA</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width:90vw;
+            height:90vh;
+            display:grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(3,1fr);
+            gap:1rem;
+            align-items: center;
+            margin: auto;
+        }
+        div{
+            width:200px;
+            height:200px;
+        }
+        .imagen{
+            width:200px;
+            height:200px;
+            
+        }
+        .imagen:nth-child(1){
+            grid-column: 1/2;
+            clip-path: polygon(10% 25%, 35% 25%, 35% 0%, 65% 0%, 65% 25%, 90% 25%, 90% 50%, 65% 50%, 65% 100%, 35% 100%, 35% 50%, 10% 50%);
+        }
+        .imagen:nth-child(2){
+            grid-column: 2/3;
+            clip-path: polygon(0% 15%, 34% 36%, 15% 0%, 85% 0%, 68% 33%, 100% 15%, 100% 85%, 69% 62%, 85% 100%, 15% 100%, 34% 63%, 0% 85%);
+        }
+        .imagen:nth-child(3){
+            grid-column: 3/4;
+            clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+            
+        }
+        img{
+            width: 100%;
+        }
+        .clip6{
+            clip-path:url(#figma);
+        }
+        .clip7{
+            clip-path:url(#figma2);
+        }
+        video{
+            clip-path:url(#figma3);
+            position:absolute;
+            top:150px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="imagen">
+            <img src="https://picsum.photos/id/437/200/300">
+        </div>
+        <div class="imagen">
+            <img src="https://picsum.photos/id/197/200/300">
+        </div>
+        <div class="imagen">
+            <img src="https://picsum.photos/id/537/200/300">
+        </div>
+        <div class="clip6">
+            <img src="https://picsum.photos/id/599/200/300">
+        </div>
+        <div class="clip7">
+            <img src="https://picsum.photos/id/567/200/300">
+        </div>
+        <div class="video">
+            <video controls width="250">
+                <source src="ddgato.mp4"
+                    type="video/webm">
+    
+                <source src="ddgato.mp4"
+                        type="video/mp4">
+    
+                Ha habido un error
+            </video>
+        </div>
+        
+        <svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <clippath id="figma">
+                <path d="M161.203 68L169.203 186L93.2034 102L29.9021 141L98.2034 29L161.203 68Z" fill="#C4C4C4"/>
+            </clippath>
+        </svg>
+        <svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <clippath id="figma2">
+                <path d="M110 100L191 67L110 161L191 122L162 184V153L66 189L117 127L14 168L88 67L14 91L40 49L14 44L40 11V28L104 6L77 49L194 20L110 100Z" fill="#C4C4C4"/>
+            </clippath>
+            
+        </svg>
+        <svg width="250" height="400" viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <clippath id="figma3">
+
+                <path d="M125.5 88L154.126 176.1L246.76 176.1L171.817 230.549L200.443 318.65L125.5 264.201L50.5574 318.65L79.1829 230.549L4.2403 176.1L96.8745 176.1L125.5 88Z" fill="#C4C4C4"/>
+            </clippath>
+        </svg>
+        
+            
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        .wrapper{
+            width: 100vw;
+            height: 100vh;
+            background-color: grey;
+            
+        }
+        .container{
+            display: flex;
+            flex-flow: column;
+            width:100vw;
+            height:100%;
+        }
+        header{
+            flex-basis: 10%;
+            height: 20%;
+            background-color: greenyellow;
+            display:flex;
+            flex-flow:row nowrap;
+            justify-content: space-between;
+            align-items: center;
+            padding: 5px;
+            border-radius: 10px;
+            margin: 5px;
+
+        }
+        img{
+            height: 95%;
+            object-fit: cover;
+            display: block;
+            border-radius: 10px;
+        }
+        header div{
+            height: 95%;
+            width: 200px;
+            background-color: rgb(23, 95, 83);
+            border-radius: 10px;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+        }
+        input{
+            height:64px;
+            align-self: center;
+        }
+        section{
+            flex-basis: 70%;
+            display:flex;
+            flex-flow:row nowrap;
+        }
+        section *{
+            margin: 5px;
+            border-radius: 10px;
+        }
+        nav{
+            background-color: coral;
+            flex-basis:20%;
+        }
+        main{
+            background-color: crimson;
+            flex-basis: 80%;
+            display:flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            padding: 10px;
+        }
+        .punto{
+            width: 64px;
+            height: 64px;
+            border-radius: 50%;
+            background-color: black;
+        }
+        .punto:nth-of-type(2){
+            align-self: center;
+        }
+        .punto:nth-of-type(3){
+            align-self: flex-end;
+        }
+        aside{
+            flex-basis: 20%;
+            background-color:gold;
+        }
+        footer{
+            flex-basis:15%;
+            background-color: fuchsia;
+            border-radius: 10px;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="wrapper">
+        <div class="container">
+            <header>
+                <img src="https://p.favim.com/orig/2018/08/17/adorable-dd-animal-Favim.com-6136888.jpg">
+                <input type="text" placeholder="Search...">
+                <img src="https://64.media.tumblr.com/846eac2ecee25943bd91b55d77572b09/20c6e1408ecd6462-03/s400x600/e2b18a2350de6126f396a7473f390238067aca39.jpg">
+                <div>header</div>
+            </header>
+            <section>
+                <nav></nav>
+                <main>
+                    <div class="punto"></div>
+                    <div class="punto"></div>
+                    <div class="punto"></div>
+                </main>
+                <aside></aside>
+            </section>
+            <footer></footer>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Calibri, 'Trebuchet MS', sans-serif;
+        }
+        nav div{
+            display:inline-block;
+            margin-right:50px;
+            padding: 5px 30px 5px 10px;
+            background-color: rgb(211, 168, 174);
+            font-family: Impact, sans-serif;
+        }
+        nav div:hover{
+            filter:invert();
+        }
+        nav div:first-child{
+            background-color:rgb(240, 21, 159);
+        }
+        nav div:last-child{
+            background-color:coral;
+        }
+        div div{
+            height: 200px;
+            
+        }
+        
+        div div:first-of-type{
+            background-color: rgb(141, 141, 141);
+            color: white;
+            font-family: 'Courier New', Courier, monospace;
+            
+        }
+        div div:target{
+            font-family:'Courier New', Courier, monospace;
+            color: yellow;
+        }
+        div div div:last-of-type{
+            font-family: Impact, sans-serif;
+            background-color:green;
+            padding: 5px 30px 5px 30px;
+            width: 70px;
+            border-radius:8px;
+            height:20px;
+            
+        }
+        div div div:last-of-type:hover{
+            filter:invert();
+        }
+        div div:nth-child(2){
+            background-color: rgb(243, 170, 13);
+            
+        }
+        div div:last-child{
+            background-color: rgb(13, 228, 243);
+            
+        }
+        a{
+            text-decoration: none;
+            color: inherit;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div>
+            <a href="#primero">Primero</a>
+        </div>
+        <div>
+            <a href="#segundo">Segundo</a>
+        </div>
+        <div>
+            <a href="#tercero">Tercero</a>
+        </div>
+    </nav>
+    <div>
+        <div id="primero">
+            <h2>Articulo UNO</h2>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti 
+                impedit sit quod necessitatibus qui delectus in alias ex voluptatum 
+                inventore, laborum esse quae ipsam, exercitationem, iste similique non 
+                aut magnam.
+            </p>
+            <div>
+                <a href="#">Volver</a>
+            </div>
+        </div>
+        <div id="segundo">
+            <h2>Articulo DOS</h2>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti 
+                impedit sit quod necessitatibus qui delectus in alias ex voluptatum 
+                inventore, laborum esse quae ipsam, exercitationem, iste similique non 
+                aut magnam.
+            </p>
+            <div>
+                <a href="#">Volver</a>
+            </div>
+        </div>
+        <div id="tercero">
+            <h2>Articulo TRES</h2>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti 
+                impedit sit quod necessitatibus qui delectus in alias ex voluptatum 
+                inventore, laborum esse quae ipsam, exercitationem, iste similique non 
+                aut magnam.
+            </p>
+            <div>
+                <a href="#">Volver</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

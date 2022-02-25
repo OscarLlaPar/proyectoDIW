@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+        .container{
+            background: #ddd;
+            width:95vw;
+            height:100%;
+            margin: 1rem auto;
+        }
+        header img{
+            max-width: 20%;
+            /* max-height:80%; */
+        }
+        header{
+            display:grid;
+            grid-template-columns: repeat(3,33fr);
+            justify-items:center;
+            align-items: center;
+            padding: 0.5rem 0;
+        }
+        article img{
+            max-width: 100%;
+            width:100%;
+            height:100%;
+        }
+        main{
+            display:grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px,500px));
+            justify-content: center;
+            gap: .6rem;
+        }
+        .card{
+            display:grid;
+            grid-template-columns: 6fr 1.5fr 1.5fr;
+        }
+        .card p:nth-of-type(1){
+            background-color:lightskyblue;
+        }
+        .card p:nth-of-type(2){
+            background-color:deepskyblue;
+        }
+        .card p{
+            display:grid;
+            place-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="https://64.media.tumblr.com/846eac2ecee25943bd91b55d77572b09/20c6e1408ecd6462-03/s400x600/e2b18a2350de6126f396a7473f390238067aca39.jpg" alt="">
+            <img src="https://p.favim.com/orig/2018/08/17/adorable-dd-animal-Favim.com-6136888.jpg" alt="">
+            <img src="https://64.media.tumblr.com/ef69f72f7dfc030e3e40ba9ef00c18d8/55c6a058c926425e-2d/s500x750/928643a98bf62bf2bac7c3fcc87f3c2314c9dba2.gifv" alt="">
+        </header>
+        <main>
+            <article class="card">
+                <img src="https://64.media.tumblr.com/846eac2ecee25943bd91b55d77572b09/20c6e1408ecd6462-03/s400x600/e2b18a2350de6126f396a7473f390238067aca39.jpg">
+                <p>Imagen 1</p>
+                <p>Lorem ipsum</p>
+            </article>
+            <article class="card">
+                <img src="https://p.favim.com/orig/2018/08/17/adorable-dd-animal-Favim.com-6136888.jpg">
+                <p>Imagen 2</p>
+                <p>Lorem ipsum</p>
+            </article>
+            <article class="card">
+                <img src="https://64.media.tumblr.com/ef69f72f7dfc030e3e40ba9ef00c18d8/55c6a058c926425e-2d/s500x750/928643a98bf62bf2bac7c3fcc87f3c2314c9dba2.gifv">
+                <p>Imagen 3</p>
+                <p>Lorem ipsum</p>
+            </article>
+            <article class="card">
+                <img src="https://64.media.tumblr.com/846eac2ecee25943bd91b55d77572b09/20c6e1408ecd6462-03/s400x600/e2b18a2350de6126f396a7473f390238067aca39.jpg">
+                <p>Imagen 4</p>
+                <p>Lorem ipsum</p>
+            </article>
+            <article class="card">
+                <img src="https://p.favim.com/orig/2018/08/17/adorable-dd-animal-Favim.com-6136888.jpg">
+                <p>Imagen 5</p>
+                <p>Lorem ipsum</p>
+            </article>
+            <article class="card">
+                <img src="https://64.media.tumblr.com/ef69f72f7dfc030e3e40ba9ef00c18d8/55c6a058c926425e-2d/s500x750/928643a98bf62bf2bac7c3fcc87f3c2314c9dba2.gifv">
+                <p>Imagen 6</p>
+                <p>Lorem ipsum</p>
+            </article>
+        </main>
+    </div>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        .container{
+            width:90vw;
+            height:90vh;
+            margin:auto;
+            background:mintcream;
+        }
+        h1{
+            text-align:center;
+            margin: 10px;
+        }
+        img{
+            height:300px;
+            width:100%;
+            object-fit: cover;
+            transition: all 0.5s ease;
+        }
+        .galeria{
+            display:grid;
+            grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+            grid-template-rows: 400px;
+            gap:10px;
+        }
+        .card{
+            height:400px;
+            display:grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 3fr 6fr;
+            overflow: hidden;
+        }
+        p{
+            line-height: 15px;
+        }
+        .card:hover img{
+            transform:scale(1.2);
+        }
+        .card:nth-child(1){
+            background-color: lawngreen;
+        }
+        .card:nth-child(2){
+            background-color:lightseagreen
+        }
+        .card:nth-child(3){
+            background-color:orchid;
+        }
+        .card:nth-child(4){
+            background-color:tomato;
+        }
+        .card:nth-child(5){
+            background-color:cornflowerblue;
+        }
+        .card:nth-child(6){
+            background-color:lightslategray;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Galería de tarjetas con imagen</h1>
+        <div class="galeria">
+            <div class="card">
+                <h3>El título</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum ipsam optio laudantium tenetur magnam. Impedit beatae minima atque porro, vel omnis officiis id nesciunt voluptatum quos nihil, deleniti dolores doloremque!</p>
+                <img src="https://64.media.tumblr.com/846eac2ecee25943bd91b55d77572b09/20c6e1408ecd6462-03/s400x600/e2b18a2350de6126f396a7473f390238067aca39.jpg">
+            </div>
+            <div class="card">
+                <h3>El título</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum ipsam optio laudantium tenetur magnam. Impedit beatae minima atque porro, vel omnis officiis id nesciunt voluptatum quos nihil, deleniti dolores doloremque!</p>
+                <img src="https://p.favim.com/orig/2018/08/17/adorable-dd-animal-Favim.com-6136888.jpg">
+            </div>
+            <div class="card">
+                <h3>El título</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum ipsam optio laudantium tenetur magnam. Impedit beatae minima atque porro, vel omnis officiis id nesciunt voluptatum quos nihil, deleniti dolores doloremque!</p>
+                <img src="https://64.media.tumblr.com/ef69f72f7dfc030e3e40ba9ef00c18d8/55c6a058c926425e-2d/s500x750/928643a98bf62bf2bac7c3fcc87f3c2314c9dba2.gifv">
+            </div>
+            <div class="card">
+                <h3>El título</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum ipsam optio laudantium tenetur magnam. Impedit beatae minima atque porro, vel omnis officiis id nesciunt voluptatum quos nihil, deleniti dolores doloremque!</p>
+                <img src="https://66.media.tumblr.com/b8390207661e819d769d70c3454023c0/b7cbf4853db58b87-8f/s400x600/8add7624433507126430fc26b910c56064505226.gif">
+            </div>
+            <div class="card">
+                <h3>El título</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum ipsam optio laudantium tenetur magnam. Impedit beatae minima atque porro, vel omnis officiis id nesciunt voluptatum quos nihil, deleniti dolores doloremque!</p>
+                <img src="https://64.media.tumblr.com/f695388aecd5e6427c723ccd54b060a7/tumblr_ps4a6mUUen1tawgedo2_400.gifv">
+            </div>
+            <div class="card">
+                <h3>El título</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum ipsam optio laudantium tenetur magnam. Impedit beatae minima atque porro, vel omnis officiis id nesciunt voluptatum quos nihil, deleniti dolores doloremque!</p>
+                <img src="https://i.pinimg.com/originals/df/10/2b/df102b48062904ebf4af4d118d21fa66.jpg">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

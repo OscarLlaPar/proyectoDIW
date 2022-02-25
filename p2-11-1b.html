@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        .container{
+            width:500px;
+            height:300px;
+            background-image: url('https://i.ytimg.com/vi/jAWXidYJFDA/maxresdefault.jpg');
+            background-size: cover;
+            border: solid red 2px;
+            position:relative;
+            overflow:hidden;
+        }
+        .capa2{
+            background-color: rgba(255,0,0,0.5);
+            width:496px;
+            height:296px;
+            position:relative;
+            right:-100%;
+            transition: all 0.5s ease;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            flex-flow: column;
+        }
+        h2, p{
+            opacity:1;
+        }
+        .container:hover>.capa2{
+            right:0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="capa2">
+            <h2>Título</h2>
+            <p>Esto es una prueba</p>
+        </div>
+    </div>
+</body>
+</html>

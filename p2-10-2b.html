@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <style>
+            *{
+                margin:0;
+                padding:0;
+                box-sizing:border-box;
+                font-family: sans-serif;
+                font-weight:bold;
+            }
+            .wrapper{
+                background-color: lightgrey;
+                width:90vw;
+                height: 80vh;
+                display:grid;
+                margin: auto;
+                grid-template-columns: 2.5fr 5fr 2.5fr;
+                /*grid-template-rows: 3.3fr 3.3fr 3.3fr;*/
+                grid-auto-rows:repeat(3, 1fr);
+                grid-template-areas: 
+                    "h h h"
+                    "n m a"
+                    "n f f"
+                ;
+                gap:5px;
+                padding:5px;
+            }
+            header{
+                background-color: chocolate;
+                grid-area: h;
+            }
+            nav{
+                background-color:dodgerblue;
+                grid-area: n;
+            }
+            main{
+                background-color: indianred;
+                grid-area: m;
+            }
+            aside{
+                background-color: limegreen;
+                grid-area: a;
+            }
+            footer{
+                background-color: mediumpurple;
+                grid-area: f;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="wrapper">
+            <header>Header</header>
+            <nav>Nav</nav>
+            <main>Main</main>
+            <aside>aside</aside>
+            <footer>footer</footer>
+        </div>
+    </body>
+</html>

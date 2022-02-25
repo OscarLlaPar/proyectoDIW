@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width:95vw;
+            height:100vh;
+            margin:0 auto;
+            /* background: linear-gradient(purple, blue); */
+            position: relative;
+        }
+        img{
+            display:block;
+            max-width: 100%;
+        }
+        .mask{
+            position: absolute;
+            top:0;
+            width:95vw;
+            height:100vh;
+            mask: url('maskeverest2.png');
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="everest.jpg" alt="" width="800px" class="fondo">
+        <div class="mask">
+            <img src="maskeverest2.png" alt="">
+        </div>
+        
+    </div>
+</body>
+</html>

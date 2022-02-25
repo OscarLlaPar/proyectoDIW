@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+            text-align:center;
+        }
+        .calendario{
+            display:grid;
+            height:50vh;
+            grid-template-columns: repeat(7,1.25fr);
+            gap:5px;
+        }
+        .cabecera{
+            display:grid;
+            height:50px;
+            grid-template-columns: repeat(7,1.25fr);
+            gap:5px;
+            margin-bottom:5px;
+        }
+        .dia, .nombreDia{
+            display:flex;
+            justify-content: center;
+            align-items:center;
+            font-size:40px;
+        }
+        .nombreDia{
+            background-color: lightseagreen;
+        }
+        .dia{
+            background-color: rgb(166, 187, 226);
+            max-height:100px;
+            max-width:150px;
+        }
+    
+    </style>
+</head>
+<body>
+    <h1>Enero 2022</h1>
+    <div class="cabecera">
+        <div class="nombreDia">L</div>
+        <div class="nombreDia">M</div>
+        <div class="nombreDia">X</div>
+        <div class="nombreDia">J</div>
+        <div class="nombreDia">V</div>
+        <div class="nombreDia">S</div>
+        <div class="nombreDia">D</div>
+    </div>
+    <div class="calendario">
+        <div class="dia"></div>
+        <div class="dia"></div>
+        <div class="dia"></div>
+        <div class="dia"></div>
+        <div class="dia"></div>
+        <div class="dia">1</div>
+        <div class="dia">2</div>
+        <div class="dia">3</div>
+        <div class="dia">4</div>
+        <div class="dia">5</div>
+        <div class="dia">6</div>
+        <div class="dia">7</div>
+        <div class="dia">8</div>
+        <div class="dia">9</div>
+        <div class="dia">10</div>
+        <div class="dia">11</div>
+        <div class="dia">12</div>
+        <div class="dia">13</div>
+        <div class="dia">14</div>
+        <div class="dia">15</div>
+        <div class="dia">16</div>
+        <div class="dia">17</div>
+        <div class="dia">18</div>
+        <div class="dia">19</div>
+        <div class="dia">20</div>
+        <div class="dia">21</div>
+        <div class="dia">22</div>
+        <div class="dia">23</div>
+        <div class="dia">24</div>
+        <div class="dia">25</div>
+        <div class="dia">26</div>
+        <div class="dia">27</div>
+        <div class="dia">28</div>
+        <div class="dia">29</div>
+        <div class="dia">30</div>
+        <div class="dia">31</div>
+    </div>
+</body>
+</html>

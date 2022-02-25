@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+            --colorGrande: orange;
+            --colorCarrusel: lightblue;
+            --colorLabel: violet;
+            --colorChecked: cyan;
+        }
+        .carrusel{
+            width:90%;
+            height: 50vh;
+            background-color:var(--colorCarrusel);
+            margin: auto;
+            overflow: hidden;
+        }
+        .carGrande{
+            width:400%;
+            height:80%;
+            background-color: var(--colorGrande);
+            display:flex;
+            flex-flow:row nowrap;
+            justify-content: space-between;
+            transition: all 0.3s ease-in;
+        }
+        .carGrande img{
+            width:25%;
+            height:100%;
+        }
+        .botones{
+            display:flex;
+            width:100%;
+            height:20%;
+            justify-content: center;
+            align-items: center;
+            gap:10px;
+        }
+        input{
+            display:none;
+        }
+        #p1:checked ~ .botones> label:nth-child(1){
+            background-color: var(--colorChecked);
+        }
+        #p2:checked ~ .botones> label:nth-child(2){
+            background-color: var(--colorChecked);
+        }
+        #p3:checked ~ .botones> label:nth-child(3){
+            background-color: var(--colorChecked);
+        }
+        #p4:checked ~ .botones> label:nth-child(4){
+            background-color: var(--colorChecked);
+        }
+        label{
+            display: block;
+            width:32px;
+            height:32px;
+            background-color: var(--colorLabel);
+            border-radius:50%;
+            transition: all 0.3s;
+        }
+        #p1:checked~.carGrande{
+            transform: translateX(-0%);
+        }
+        #p2:checked~.carGrande{
+            transform: translateX(-25%);
+        }
+        #p3:checked~.carGrande{
+            transform: translateX(-50%);
+        }
+        #p4:checked~.carGrande{
+            transform: translateX(-75%);
+        }
+    </style>
+</head>
+<body>
+    <div class="carrusel">
+        <input type="radio" id="p1" name="rd" checked>
+        <input type="radio" id="p2" name="rd">
+        <input type="radio" id="p3" name="rd">
+        <input type="radio" id="p4" name="rd">
+        <div class="carGrande">
+            <img src="https://media.ocioenlinea.com/uploads/media/2021/03/16/kittisaurus-youtube.jpg" alt="">
+            <img src="https://preview.redd.it/y7px3f8jliv61.jpg?auto=webp&s=4a4d5f18819a56b4fe07117e58ac7ddf72158dfc" alt="">
+            <img src="https://pbs.twimg.com/media/EThu34zUMAAk0vM.jpg" alt="">
+            <img src="https://i.ytimg.com/vi/2UztzsbeIdU/sddefault.jpg#404_is_fine" alt="">
+        </div>
+        <div class="botones">
+            <label for="p1"></label>
+            <label for="p2"></label>
+            <label for="p3"></label>
+            <label for="p4"></label>
+        </div>
+        
+    </div>
+</body>
+</html>

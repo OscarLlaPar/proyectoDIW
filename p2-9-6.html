@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+        body{
+            background-image: url('https://i.pinimg.com/originals/49/ff/c8/49ffc8f405fa354f1a8f4cdb5f3d3044.jpg');
+            background-repeat: no-repeat;
+            background-size:cover;
+        }
+        .wrapper{
+            width:95vw;
+            padding:10px;
+            height:60vh;
+            margin: 20vh auto;
+            background-color: rgb(182, 153, 150);
+            display:flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container{
+            width:100%;
+            height:100%;
+            background-color: rgb(236, 218, 216);
+            display:flex;
+            flex-flow:column wrap;
+        }
+        .sidebar{
+            flex-basis: 100%;
+            padding:10px;
+            height:100%;
+            background-color: rgb(43, 43, 43);
+            width:20%;
+            display:flex;
+            flex-flow:column;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .sidebar img{
+            width:100%;
+            border-radius:10px;
+        }
+        .contacto{
+            width:100%;
+            margin: 10px 0;
+            height:10%;
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 25px;
+
+        }
+        .contacto img{
+            height:50px;
+            width:50px;
+            border-radius: 5px;
+        }
+        .main{
+            width:80%;
+            padding:20px;
+            display:flex;
+            flex-flow: row wrap;
+        }
+        .main p{
+            width:100%;
+        }
+        .galeria{
+            width:100%;
+            height:50%;
+            display:flex;
+            gap:10px;
+        }
+
+        .main img{
+            width:32%;
+            height:100%;
+            border-radius:10px;
+        }
+        @media all and (max-width:768px){
+            .wrapper{
+                height:75vh;
+            }
+            .sidebar{
+                width:40%;
+                order:2;
+                justify-content: space-evenly;
+            }
+            .main{
+                flex-flow:column;
+                width:60%;
+            }
+            .main img{
+                width:100%;
+                height:16%;
+            }
+            .galeria{
+                flex-flow: column;
+            }
+        }
+        @media all and (max-width:576px){
+            .wrapper{
+                height:fit-content;
+            }
+            .container{
+                flex-flow:column;
+            }
+            .sidebar{
+                width:100%;
+            }
+            .main{
+                width:100%;
+                height:75%;
+                flex-basis: 20%;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <div class="sidebar">
+                <img src="https://i.pinimg.com/736x/7e/1a/45/7e1a45837e29c04a0434148050fbc56a.jpg">
+                <div class="contacto">
+                    <img src="https://i.redd.it/g44ami4fgkc51.jpg">
+                    <p>email</p>
+                </div>
+                <div class="contacto">
+                    <img src="https://i.pinimg.com/1200x/c7/3b/46/c73b461ccce91fc7a7ece4e2d46c3cf0.jpg">
+                    <p>
+                        Red social
+                    </p>
+                </div>
+                <div class="contacto">
+                    <img src="https://static.wikia.nocookie.net/creamheroes/images/6/6d/Even_more_dd_pics.png/revision/latest/scale-to-width-down/250?cb=20210807115511">
+                    <p>
+                        educacyl
+                    </p>
+                </div>
+            </div>
+            <div class="main">
+                <h1>El tema que tu quieras con flexbox</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore et quo placeat recusandae neque ipsa dignissimos fugiat molestias praesentium! Nam, molestias! Totam in praesentium dignissimos cum, culpa blanditiis minima perspiciatis!</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem velit, porro molestiae repudiandae sed, minus consectetur voluptatibus ipsam quod aperiam, in et corporis! A voluptatem quibusdam alias rem quidem tempora?</p>
+                <div class="galeria">
+                <img src="https://preview.redd.it/ipuq0ko97x551.jpg?auto=webp&s=e59f8d88d73ff7ef615fe36dea9069c853a206ff">
+                <img src="https://i.pinimg.com/originals/38/fc/3e/38fc3e1c972ce1d52197f415374b2c4a.jpg">
+                <img src="https://66.media.tumblr.com/845e412053f86180b45d8e1177a64c8e/tumblr_pvigiwMIa81tawgedo1_400.gif">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        .wrapper{
+            width:500px;
+            height:400px;
+            background: greenyellow;
+            margin:3rem auto;
+            display:flex;
+            flex-flow:wrap row;
+            gap: 30px;
+            justify-content:center;
+            align-content:center;
+        }
+        .dado{
+            flex-basis: 120px;
+            width:120px;
+            height:120px;
+            background:red;
+            border-radius: .5rem;
+            padding:12px;
+        }
+        .dado .punto{
+            flex-basis:24px;
+            width:24px;
+            height:24px;
+            border-radius:50%;
+            background-color: black;
+        }
+        .dado:nth-child(1){
+            display:flex;
+            justify-content:center;
+            align-items:center;
+        }
+        .dado:nth-child(2){
+            display:flex;
+            justify-content: space-between;
+        }
+        .dado:nth-child(2) .punto:nth-child(2){
+            align-self: flex-end;
+        }
+        .dado:nth-child(3){
+            display:flex;
+            justify-content: space-between;
+        }
+        .dado:nth-child(3) .punto:nth-child(2){
+            align-self: center;
+        }
+        .dado:nth-child(3) .punto:nth-child(3){
+            align-self: flex-end;
+        }
+        .dado:nth-child(4){
+            display:flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+        }
+        .dado:nth-child(4) .c1, .dado:nth-child(4) .c2{
+            display:flex;
+            background-color: transparent;
+            justify-content: space-between;
+        }
+        .dado:nth-child(5){
+            display:flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+        }
+        .dado:nth-child(5) .c1, .dado:nth-child(5) .c3{
+            display:flex;
+            background-color: transparent;
+            justify-content: space-between;
+        }
+        .dado:nth-child(5) .c2{
+            align-self: center;
+        }
+        .dado:nth-child(6){
+            display:flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+        }
+        .dado:nth-child(6) .c1, .dado:nth-child(6) .c2, .dado:nth-child(6) .c3{
+            display:flex;
+            background-color: transparent;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="dado">
+            <div class="punto"></div>
+        </div>
+        <div class="dado">
+            <div class="punto"></div>
+            <div class="punto"></div>
+        </div>
+        <div class="dado">
+            <div class="punto"></div>
+            <div class="punto"></div>
+            <div class="punto"></div>
+        </div>
+        <div class="dado">
+            <div class="c1">
+                <div class="punto"></div>
+                <div class="punto"></div>
+            </div>
+            <div class="c2">
+                <div class="punto"></div>
+                <div class="punto"></div>
+            </div>
+        </div>
+        <div class="dado">
+            <div class="c1">
+                <div class="punto"></div>
+                <div class="punto"></div>
+            </div class="c1">
+            <div class="c2">
+                <div class="punto"></div>
+            </div>
+            <div class="c3">
+                <div class="punto"></div>
+                <div class="punto"></div>
+             </div>
+        </div>
+        <div class="dado">
+            <div class="c1">
+                <div class="punto"></div>
+                <div class="punto"></div>
+            </div>
+            <div class="c2">
+                <div class="punto"></div>
+                <div class="punto"></div>
+            </div>
+            <div class="c2">
+                <div class="punto"></div>
+                <div class="punto"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

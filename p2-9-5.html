@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+        nav{
+            
+            height:5vh;
+            display:flex;
+            justify-content: flex-end;
+            background-color: rgb(71, 71, 124);
+            width:100vw;
+        }
+        span{
+            
+            height: 5vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color:white;
+            font-weight:bold;
+            padding: 0 10px;
+        }
+        span:hover{
+            background-color: rgb(125, 171, 192);
+        }
+        span:first-of-type{
+                margin-right:auto;
+            }
+        @media all and (max-width:768px){
+            nav{
+                justify-content:space-evenly;
+            }
+            span:first-of-type{
+                display:none;
+            }
+        }
+        @media all and (max-width:576px){
+            nav{
+                text-align:center;
+                flex-flow:column;
+                background-color: transparent;
+                gap:1px;
+                height:24vh;
+            }
+            span{
+                background-color: rgb(71, 71, 124);
+                width:100vw;
+                
+            }
+            span:first-of-type{
+                display:flex;
+                order:5;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <span>&#9883</span>
+        <span>Home</span>
+        <span>Products</span>
+        <span>About</span>
+        <span>Contact</span>
+        
+    </nav>
+</body>
+</html>

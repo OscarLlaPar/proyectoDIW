@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            --colorCara:blue;
+            --colorReves:red;
+        }
+        h1{
+            text-align: center;
+            text-transform: uppercase;
+        }
+        .container{
+            perspective: 400px;
+        }
+        .carta{
+            margin:3rem auto;
+            width:150px;
+            height:250px;
+            position: relative;
+            transform-style: preserve-3d;
+            transition: all 2s ease;
+        }
+        .cara, .reves{
+            width:100%;
+            height:100%;
+            font-size:10rem;
+            color:white;
+            text-align: center;
+            line-height: 250px;
+            position: absolute;
+            backface-visibility: hidden;
+            transition: all 2s ease;
+
+        }
+        .cara{
+            background-color: var(--colorCara);
+        }
+        .reves{
+            background-color: var(--colorReves);
+            transform: rotateY(180deg);
+            
+        }
+        .carta:hover{
+            transform: rotateY(180deg);
+        }
+    </style>
+</head>
+<body>
+    <h1>Giro de carta</h1>
+    <div class="container">
+        <div class="carta">
+            <div class="cara">1</div>
+            <div class="reves">2</div>
+        </div>
+    </div>
+</body>
+</html>

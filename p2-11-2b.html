@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+            color:white;
+            font-weight: bold;
+        }
+        .container{
+            width: 95vw;
+            height:100vh;
+            margin: 5rem auto;
+            background-color:cornsilk;
+            padding: 5rem;
+        }
+        ul{
+            list-style:none;
+            width:400px;
+            height:50px;
+            display:flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-bottom: 3rem;
+        }
+        .menu1{
+            background-color:forestgreen;
+            overflow: hidden;
+        }
+        .menu2{
+            background-color: deepskyblue;
+        }
+        .menu1>li{
+            border-top:solid white 2px;
+            border-bottom: solid white 2px;
+            padding: 20px 5px;
+            transition: all 0.7s ease;
+        }
+        .menu2>li{
+            transition: all 0.7s ease;
+            padding:0px 10px;
+        }
+        a{
+            text-decoration: none;
+            color:white;
+        }
+        .menu1>li:hover{
+            padding: 5px 5px;
+        }
+        .menu2>li:hover{
+            background-color: lightgrey;
+            padding:10px 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <ul class="menu1">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Shop</a></li>
+        </ul>
+        <ul class="menu2">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Shop</a></li>
+        </ul>
+    </div>
+</body>
+</html>

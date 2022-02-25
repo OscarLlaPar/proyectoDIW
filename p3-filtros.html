@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ejemplo mascaras 1</title>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }     
+            .container{
+                margin: 0;
+                font-size: 15vw;
+                font-family:Arial;
+                background: black;
+                color:purple;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 50% 50%;
+                row-gap: 10px;
+                justify-items: center;
+                align-items: center;
+                overflow: hidden;
+            }
+            .block::after{
+                animation: block-scroll 1s linear infinite alternate;
+                content: "▌▐█░▒▓hola";
+            }
+            .block2{
+                margin-top: 50px;
+            }
+            .block2::after{
+                animation: block2-scroll 1s linear infinite alternate;
+                content: "▐█░▒▓▌mundo";                  
+            }
+            @keyframes block-scroll {
+                0%{
+                    content:"▐█░▒▓▌hola"; 
+                    filter: blur(10px) contrast(90)
+                }
+                34.99%{
+                    content:"█hola░▒▓▌▐"; 
+                    filter: blur(15px) contrast(90)
+                }
+                35%{
+                    content:"hola░▒▓▌▐█"; 
+                    filter: blur(20px) contrast(90)
+                }
+                69.99%{
+                    content:"▒▓▌▐█░" ;
+                    filter: blur(25px) contrast(90)
+                }
+                70%{
+                    content:"▓▌▐█░hola▒"; 
+                    filter: blur(30px) contrast(90)
+                }
+                100%{
+                    content:"▌▐█hola░▒▓"; 
+                    filter: blur(35px) contrast(90)
+                }
+            }   
+            @keyframes block2-scroll {
+                0%{
+                    content:"▐█mundo░▒▓▌"; 
+                    filter: blur(5px) contrast(90)
+                }
+                34.99%{
+                    content:"█░▒▓▌▐mundo"; 
+                    filter:brightness(1) blur(15px) contrast(90)
+                }
+                35%{
+                    content:"░▒▓▌▐█"; 
+                    filter:drop-shadow(-15px -30px 20px cyan) blur(20px) contrast(90)
+                }
+                69.99%{
+                    content:"▒▓▌mundo▐█░" ;
+                    filter: contrast(90) blur(20px)
+                }
+                70%{
+                    content:"▓▌▐█░▒mundo"; 
+                    filter:hue-rotate(340deg) blur(25px) contrast(90)
+                }
+                100%{
+                    content:"mundo▌▐█░▒▓"; 
+                    filter:invert(0.2) blur(35px) contrast(90)
+                }           
+            }  
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="block">
+
+            </div>
+            <div class="block">
+
+            </div>
+            <div class="block2">
+
+            </div>
+            <div class="block2">
+
+            </div>
+        </div> 
+    </body>
+</html>

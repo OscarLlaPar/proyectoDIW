@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        .container{
+            width:100vw;
+            height:20vh;
+            display:grid;
+            grid-template-columns: repeat(5,2fr);
+            grid-template-areas: 
+                "o1 o2 o3 o4 o5"
+                ". . s1 . ."
+                ". . s2 so1 ."
+                ". . s3 so2 ."
+                ". . . so3 ."
+            ;
+        }
+        .container div{
+            background-color: darkgreen;
+            color: white;
+            border:solid red 1px;
+            display: flex;
+            justify-content: center;
+            align-items:center;
+        }
+        .container div:hover{
+            background-color: purple;
+        }
+        .container .subop1{
+            grid-area:s1;
+        }
+        .container .subop2{
+            grid-area:s2;
+        }
+        .container .subop3{
+            grid-area: s3;
+        }
+        .container .sbm2opcion1{
+            grid-area: so1;
+        }
+        .container .sbm2opcion2{
+            grid-area: so2;
+        }
+        .container .sbm2opcion3{
+            grid-area: so3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="opcion1">Opción 1</div>
+        <div class="opcion2">Opción 2</div>
+        <div class="opcion3">Opción 3</div>
+        <div class="opcion4">Opción 4</div>
+        <div class="opcion5">Opción 5</div>
+        <div class="subop1">subop 1</div>
+        <div class="subop2">subop 2</div>
+        <div class="subop3">subop 3</div>
+        <div class="sbm2opcion1">sbm2Opcion 1</div>
+        <div class="sbm2opcion2">sbm2Opcion 2</div>
+        <div class="sbm2opcion3">sbm2Opcion 3</div>
+    </div>
+</body>
+</html>

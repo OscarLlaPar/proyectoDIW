@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+            --colorGrande: orange;
+            --colorCarrusel: lightblue;
+            --colorLabel: violet;
+            --colorChecked: cyan;
+        }
+        .carrusel{
+            position:relative;
+            width:90%;
+            height: 50vh;
+            background-color:var(--colorCarrusel);
+            margin: auto;
+            overflow: hidden;
+        }
+        .carGrande{
+            width:400%;
+            height:100%;
+            background-color: var(--colorGrande);
+            display:flex;
+            flex-flow:row nowrap;
+            justify-content: space-between;
+            transition: all 0.3s ease-in;
+        }
+        .carGrande img{
+            width:25%;
+            height:100%;
+        }
+        .prev, .next{
+            background:grey;
+            position: absolute;
+            top:50%;
+            border-radius:50%;
+            line-height: 24px;
+            text-align:center;
+            font-size: 2rem;
+            font-weight:bold;
+            font-family: sans-serif;
+        }
+        .next{
+            right:8px;
+        }
+        .prev{
+            left: 8px;
+        }
+        .prev:hover, .next:hover{
+            background: white;
+        }
+    </style>
+    
+</head>
+<body>
+    <h1></h1>
+    <div class="carrusel">
+        
+        <div class="carGrande">
+            <img src="https://media.ocioenlinea.com/uploads/media/2021/03/16/kittisaurus-youtube.jpg" alt="">
+            <img src="https://preview.redd.it/y7px3f8jliv61.jpg?auto=webp&s=4a4d5f18819a56b4fe07117e58ac7ddf72158dfc" alt="">
+            <img src="https://pbs.twimg.com/media/EThu34zUMAAk0vM.jpg" alt="">
+            <img src="https://i.ytimg.com/vi/2UztzsbeIdU/sddefault.jpg#404_is_fine" alt="">
+        </div>
+        <div class="prev btn">&#60;</div>
+        <div class="next btn">&#62;</div>
+    </div>
+
+    <script src="../jquery-3.6.0.min.js"></script>
+    <script>
+        $(function(){
+            $(fNext = function () {
+                $(".carGrande img:first-child").insertAfter($(".carGrande img:last-child"))
+            });
+
+            $(".next").click(fNext);
+            $(fPrev = function () {
+                $(".carGrande img:last-child").insertBefore($(".carGrande img:first-child"))
+            });
+
+            $(".prev").click(fPrev);
+
+
+        });
+        
+        
+    </script>
+</body>
+</html>

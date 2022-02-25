@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica 1-1-2 DIW Oscar Llamas</title>
+    <style>
+        body{
+            text-align: center;
+            font-weight: bold;
+            margin:20px;
+        }
+        h3{
+            text-align: left;
+        }
+        table{
+            width: 90%;
+        }
+        .rojo{
+            background-color: #FF0000;
+            
+        }
+        .verde{
+            background-color: #00FF00;
+        }
+        .azul{
+            background-color: #0000FF;
+        }
+        .rojo:hover{
+            background-color: #00FFFF;
+            
+        }
+        .verde:hover{
+            background-color: #FF00FF;
+        }
+        .azul:hover{
+            background-color: #FFFF00;
+        }
+        td{
+            padding: 5px;
+            width: 33%;
+        }
+        .sc{
+            display:none;
+        }
+        td:hover .pr{
+            display:none;
+        }
+        td:hover .sc{
+            display:block;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <h3>Colores RGB, al pasar el ratón por encima, muestran el color complementario:</h3>
+    <table>
+        <tr>
+            <td class="rojo">
+                <p class="pr">Color rojo #FF0000</p>
+                <p class="sc">Color cian #00FFFF</p>
+            </td>
+            <td class="verde">
+                <p class="pr">Color verde #00FF00</p>
+                <p class="sc">Color magenta #FF00FF</p>
+            </td>
+            <td class="azul">
+                <p class="pr">Color azul #0000FF</p>
+                <p class="sc">Color amarillo #FFFF00</p>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

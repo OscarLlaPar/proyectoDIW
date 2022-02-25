@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        article{
+            width:500px;
+        }
+        a{
+            display:block;
+            text-decoration:none;
+            font-weight: bold;
+            background-color: darkgrey;
+            padding-left: 0.5rem;
+        }
+        p{
+            background-color:lightgrey;
+            display:none;
+            padding:10px;
+        }
+        div{
+            width:80vw;
+        }
+        p:target{
+            display:block;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Acordeón con :target</h1>
+    <div>
+        <article>
+            <a href="#p1">Titulo 1</a>
+            <p id="p1">
+                T1 Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Voluptate est consequuntur officia ipsa fugiat exercitationem 
+                pariatur eveniet laboriosam vitae enim vero tempore perspiciatis 
+                sequi, eligendi adipisci, blanditiis vel harum! Ipsa.
+            </p>
+        </article>
+        <article>
+            <a href="#p2">Titulo 2</a>
+            <p id="p2">
+                T2 Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Voluptate est consequuntur officia ipsa fugiat exercitationem 
+                pariatur eveniet laboriosam vitae enim vero tempore perspiciatis 
+                sequi, eligendi adipisci, blanditiis vel harum! Ipsa.
+            </p>
+        </article>
+        <article>
+            <a href="#p3">Titulo 3</a>
+            <p id="p3">
+                T3 Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Voluptate est consequuntur officia ipsa fugiat exercitationem 
+                pariatur eveniet laboriosam vitae enim vero tempore perspiciatis 
+                sequi, eligendi adipisci, blanditiis vel harum! Ipsa.
+            </p>
+        </article>
+        <article>
+            <a href="#">Cerrar</a>
+        </article>
+    </div>
+</body>
+</html>

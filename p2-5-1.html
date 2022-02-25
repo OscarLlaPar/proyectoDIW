@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color:rgb(238, 238, 167);
+        }
+        input{
+            padding:5px;
+        }
+        input:last-of-type{
+            padding:0;
+        }
+        input:required{
+            background-color:rgb(105, 196, 196);
+            border:none;
+            border-radius:2px;
+        }
+        input:focus{
+            border: black;
+            background-color: violet;
+        }
+        input[type=email]:valid{
+            background-color: rgb(78, 248, 86);
+        }
+        input[type=email]:invalid{
+            background-color: rgb(240, 90, 90);
+        }
+        input:disabled{
+            border:solid rgb(48, 113, 253) 2px;
+            border-radius: 2px;
+            background-color:rgb(175, 164, 164);
+        }
+        :checked{
+            box-shadow: 0px 1px 10px 2px red;
+        }
+        input[type=radio]:default{
+            box-shadow: 0px 0px 8px 2px blue;
+        }
+        input:in-range{
+            background-color: rgb(62, 223, 252);
+        }
+        input:out-of-range{
+            background-color: rgb(240, 90, 90);
+        }
+        input[type=submit]{
+            background-color:rgb(60, 182, 156);
+            height:50px;
+            width:150px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Pseudo-clases en formularios</legend>
+            <label>:required</label><br>
+            <input value="Nombre" required><br>
+            <label>:focus</label><br>
+            <input value="Apellidos"><br>
+            <label>:valid/:invalid</label><br>
+            <input value="mail@mail.com"type="email"><br>
+            <label>:disabled</label><br>
+            <input value="este input esta en disabled" disabled><br>
+            <fieldset>
+                <legend>:checked</legend>
+                <label for="sexo">Sexo:</label>
+                <input id="hombre" name="sexo" type="radio">
+                <label>Hombre</label>
+                <input id="mujer" name="sexo" type="radio">
+                <label>Mujer</label>
+            </fieldset>
+            <fieldset>
+                <legend>:default</legend>
+                <input name="opciones" type="radio">
+                <label>Opcion 1</label>
+                <input name="opciones" type="radio" checked>
+                <label>Opcion 2</label>
+                <input name="opciones" type="radio">
+                <label>Opcion 3</label>
+            </fieldset>
+            <fieldset>
+                <legend>:in-range/ :out-of-range</legend>
+                <label>Edad (1-120):</label>
+                <input value="1" type="number" min="1" max="120">
+            </fieldset>
+            <input type="submit">
+        </fieldset>
+    </form>
+</body>
+</html>

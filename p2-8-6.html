@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        ul{
+            list-style: none;
+            display: block;
+            background-color: #abc;
+        }
+        a{
+            color:black;
+            text-decoration: none;
+            line-height: 48px;
+            font-weight: bold;
+            
+        }
+        .container{
+            width: 95vw;
+            height: 100vh;
+            margin: auto;
+            background-color: rgb(34, 58, 10);
+        }
+        ul li{
+            display: inline-block;
+            
+            position: relative;
+            padding: 0 80px 0 15px;
+        }
+        li:hover{
+            background-color: #bcd;
+        }
+        .menu1{
+            position: absolute;
+            left:0;
+            width: 100%;
+            
+            display:none;
+        }
+        .menu1>li{
+            display:block;
+            width: 100%;
+            margin:0;
+            padding:0;
+        }
+        ul>li:hover ul{
+            display:block;
+        }
+        ul>li>ul>li>ul{
+            position: absolute;
+            top:0;
+            left: 100%;
+            display: none;
+            
+        }
+        .menu2>li{
+            width:100%;
+            display:none;
+        }
+        .menu1>li:hover ul>li{
+            display:block;
+        }
+        h1{
+            text-align: center;
+            margin-top: 500px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Oficina</a></li>
+                <li><a href="#">Instituto
+                    <span>&#x25BC;</span>
+                </a>
+                    <ul class="menu1">
+                        <li><a href="#">Física-Química</a></li>
+                        <li><a href="#">Inglés</a></li>
+                        <li><a href="#">Matemáticas
+                            <span>&#x25B6;</span>
+                        </a>
+                            <ul class="menu2">
+                                <li><a href="#">Académicas</a></li>
+                                <li><a href="#">Aplicadas</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#">Alumnos</a></li>
+            </ul>
+        </nav>
+        <h1>MENU DESPLEGABLE(DropDown) con subniveles</h1>
+    </div>
+</body>
+</html>

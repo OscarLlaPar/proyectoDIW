@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        .cuadrado{
+            height:250px;
+            width:250px;
+            background-color: red;
+            position:relative;
+            animation: animacion 5s linear infinite;
+        }
+        @keyframes animacion{
+            0%{
+                left:0;
+                margin-top:0;
+            }
+            25%{
+                left:50%;
+                margin-top:0;
+                border-radius:50%;
+                background-color: blue;
+            }
+            50%{
+                left:50%;
+                margin-top:50%;
+                border-radius:0%;
+                background-color: green;
+            }
+            75%{
+                left:0%;
+                margin-top:50%;
+                border-radius:50%;
+                background-color: yellow;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="cuadrado">
+
+    </div>
+</body>
+</html>

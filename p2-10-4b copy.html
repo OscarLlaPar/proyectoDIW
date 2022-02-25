@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        .container{
+            width:100vw;
+            height:20vh;
+            display:grid;
+            grid-template-columns: repeat(5,20fr);
+            grid-template-rows: repeat(5,20fr);
+        }
+        .container div{
+            background-color: darkgreen;
+            color: white;
+            border:solid red 1px;
+            display: flex;
+            justify-content: center;
+            align-items:center;
+        }
+        .container div:hover{
+            background-color: purple;
+        }
+        .container .subop{
+            grid-column: 3/4;
+            grid-row:2/5;
+            display:grid;
+            grid-template-columns: 1fr;
+            display:none;
+        }
+        .container .opcion3:hover~.subop, .subop:hover{
+            display:grid;
+        }
+        .container .sbm{
+            grid-column: 4/5;
+            grid-row:3/6;
+            display:grid;
+            grid-template-columns: 1fr;
+            display:none;
+        }
+        .subop div, .sbm div{
+            height:100%;
+        }
+        .subop .subop2:hover>.sbm{
+            display:grid;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="opcion1">Opción 1</div>
+        <div class="opcion2">Opción 2</div>
+        <div class="opcion3">Opción 3</div>
+        <div class="opcion4">Opción 4</div>
+        <div class="opcion5">Opción 5</div>
+        <div class="subop">
+            <div class="subop1">subop 1</div>
+            <div class="subop2">subop 2</div>
+            <div class="subop3">subop 3</div>
+        </div>
+        <div class="sbm">
+            <div class="sbm2opcion1">sbm2Opcion 1</div>
+            <div class="sbm2opcion2">sbm2Opcion 2</div>
+            <div class="sbm2opcion3">sbm2Opcion 3</div>
+        </div>
+        
+    </div>
+</body>
+</html>

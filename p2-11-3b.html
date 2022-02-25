@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            --v:0s;
+        }
+        .container{
+            width:500px;
+            height:700px;
+            background-color: grey;
+            margin: 2rem auto;
+            display:grid;
+            grid-template-columns: repeat(4, 2.5fr);
+            grid-template-rows: 0.5fr 0.5fr 9fr;
+        }
+        .molino{
+            margin:200px auto;
+            width:50px;
+            height:50px;
+            border-radius: 10px;
+            background-color: red;
+            box-shadow: 
+                120px 0 red,
+                -120px 0 red,
+                0 120px yellow,
+                0 -120px yellow;
+            animation: var(--v) girar linear infinite;
+        }
+        h1{
+            grid-column: 1/5;
+        }
+        .box{
+            grid-column: 1/5;
+            text-align: center;
+        }
+        form{
+            margin-top: 50px;
+        }
+        input[type="radio"]{
+            display:none;
+        }
+        input:checked+label{
+            background-color: blueviolet;
+        }
+        label{
+            margin:10px;
+            padding:10px;
+            border: solid yellow 1px;
+            text-align:center;
+        }
+        #x1:checked~.box>.molino{
+            --v:2s;
+        }
+        #x2:checked~.box>.molino{
+            --v:1s;
+        }
+        #x3:checked~.box>.molino{
+            --v:0.5s;
+        }
+
+        @keyframes girar{
+            to{
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Seleccione velocidad</h1>
+        <input id="x1" name="vel" type="radio">
+        <label for="x1">1x</label>
+        <input id="x2" name="vel" type="radio">
+        <label for="x2">2x</label>
+        <input id="x3" name="vel" type="radio">
+        <label for="x3">3x</label>
+        <input id="stop" name="vel" type="radio" checked>
+        <label for="stop">STOP</label>
+        <div class="box">
+            <div class="molino">
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>

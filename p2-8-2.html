@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         *{
+            margin:0;
+            padding:0;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        p{
+            padding: 1rem;
+        }
+        div{
+            margin: 10px 1rem;
+            background-color: rgb(192, 181, 150);;
+            margin-top:10px;
+            margin-bottom:0;
+            width: 800px;
+            height: 582px;
+            position:absolute;
+        }
+        div:first-of-type{
+            z-index:10;
+        }
+        label, input{
+            background-color:dodgerblue;
+            padding:10px;
+            height:30px;
+            width:75px;
+        }
+        input{
+            visibility: hidden;
+        }
+        input:checked + label{
+            background-color:darkturquoise;
+        }
+        input:checked + label + div{
+            z-index:100;
+        }
+    </style>
+</head>
+<body>
+    <input type="radio" name="rdo" id="rd1">
+    <label for="rd1" id="rl1">Radio 1</label>
+    <div>Este es el contenido del RADIO 1</div>
+    <input type="radio" name="rdo" id="rd2">
+    <label for="rd2" id="rl2">Radio 2</label>
+    <div>Este es el contenido del RADIO 2</div>
+    <input type="radio" name="rdo" id="rd3">
+    <label for="rd3" id="rl3">Radio 3</label>
+    <div>Este es el contenido del RADIO 3</div>
+    <input type="radio" name="rdo" id="rd4">
+    <label for="rd4" id="rl4">Radio 4</label>
+    <div>Este es el contenido del RADIO 4</div>
+    <input type="radio" name="rdo" id="rd5">
+    <label for="rd5" id="rl5">Radio 5</label>
+    <div>Este es el contenido del RADIO 5</div>
+    
+    
+    
+    
+    
+</body>
+</html>

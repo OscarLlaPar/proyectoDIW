@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+            font-family:'Segoe UI', sans-serif;
+        }
+        .container{
+            width: 600px;
+            height:800px;
+            margin:2rem auto;
+            position: relative;
+            overflow: hidden;
+        }
+        input{
+            display:none;
+        }
+        input+label{
+            display:block;
+            width:164px;
+            text-align:center;
+            background-color: cornflowerblue;
+            color: white;
+            font-weight:bold;
+            padding:0.5rem;
+            text-transform: uppercase;
+            margin:10px;
+            border-radius:5px;
+            
+        }
+        input+label:hover{
+            background-color: fuchsia;
+        }
+        div div{
+            background-color: rgb(22, 126, 74, 0.8);
+            width:500px;;
+            height:500px;
+            position: absolute;
+            top: 40px;
+            /* display:none; */
+            left: -100%;
+            transition: all 0.8s ease-in;
+        }
+        div div label{
+            display: block;
+            background-color: red;
+            color: white;
+            font-weight: bold;
+            line-height:30px;
+            width: 32px;
+            height: 32px;
+            text-align: center;
+            border-radius: 50%;
+            position: absolute;
+            right: 10px;
+            top:10px;
+            
+        }
+        div div label:hover{
+            background-color: rgb(117, 9, 45);
+        }
+        p{
+            width: 400px;
+            height: 150px;
+            background-color: dimgray;
+            padding: 1rem;
+            position: relative;
+            top: 30%;
+            left: 10%;
+        }
+        #mostrar:checked~div{
+            /* display: block; */
+            left:0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Ventana modal con :checked y radio buttons</h2>
+        <input type="radio" id="mostrar" name="botones">
+        <label for="mostrar">Mostrar modal</label>
+        <input type="radio" id="cerrar" name="botones">
+        
+        <div class="parrafo">
+            <label for="cerrar">X</label>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Nisi maiores voluptas magni culpa ullam sequi mollitia. 
+                Dolorem unde dolores fuga praesentium ab iusto. 
+                Facilis voluptatibus cumque natus deleniti optio reiciendis.
+            </p>
+            
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        .container{
+            width:100vw;
+            height:100vh;
+            background-color: cornsilk;
+        }
+        nav{
+            display:flex;
+            flex-flow:row nowrap;
+            width:95%;
+            height: 10%;
+            margin:auto;
+            
+        }
+        .option{
+            flex-basis:25%;
+            flex:1;
+            color:white;
+            font-family: sans-serif;
+            font-weight:bold;
+            font-size:14px;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            transition: all 0.5s ease;
+
+        }
+        .option p{
+            transform: rotate(-90deg);
+            transition: all 0.5s ease;
+        }
+        .option:hover>p{
+            transform: rotate(0deg);
+        }
+        .option:hover{
+            flex:8;
+        }
+        .option:nth-child(1){
+            background-color: darkgreen;
+            
+        }
+        .option:nth-child(2){
+            background-color: darkorange;
+        }
+        .option:nth-child(3){
+            background-color:cornflowerblue;
+        }
+        .option:nth-child(4){
+            background-color: purple;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <div class="option"><p>Centro</p></div>
+            <div class="option"><p>Profesores</p></div>
+            <div class="option"><p>Asignaturas</p></div>
+            <div class="option"><p>Cursos</p></div>
+        </nav>
+    </div>
+</body>
+</html>
