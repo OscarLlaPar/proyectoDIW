@@ -1,0 +1,88 @@
+<!DOCTYPEhtml>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible"content="IE=edge">
+        <meta name="viewport"content="width=device-width, initial-scale=1.0">
+        <title>Ejemplo mascaras 1</title>
+        <style>
+            .container{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                justify-items: center;
+                align-items: center;
+                gap: 15px;
+            }
+            section{
+                width: 250px; 
+                height: 250px;
+                position: relative;
+            }
+            img{
+                display: block;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+            .capa{
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+            }
+            .capa:hover{
+                animation: blend 3s linear infinite;
+            }
+            @keyframes blend{
+                0%{
+                    background: yellow;
+                    mix-blend-mode: multiply;
+                }
+                25%{
+                    background: red;
+                    mix-blend-mode: dark;
+                }
+                50%{
+                    background: green;
+                    mix-blend-mode: overlay;
+                }     
+                75%{
+                    background: blue;
+                    mix-blend-mode: difference;
+                }    
+                100%{
+                    background: rgb(233, 87, 20);
+                    mix-blend-mode: color-burn;
+                }     
+            }   
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <section>
+                <img src="http://picsum.photos/id/250/200/200">
+                <div class="capa">
+
+                </div>
+            </section>
+            <section>
+                <img src="http://picsum.photos/id/251/200/200">
+                <div class="capa">
+
+                </div>
+            </section>
+            <section>
+                <img src="http://picsum.photos/id/252/200/200">
+                <div class="capa">
+
+                </div>
+            </section>
+            <section>
+                <img src="http://picsum.photos/id/253/200/200">
+                <div class="capa">
+
+                </div>
+            </section>
+        </div>
+    </body>
+</html>
